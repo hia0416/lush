@@ -1,0 +1,56 @@
+/* 기본사항 */
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,address,*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.blind {
+    position: absolute;
+    top: -9999px;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+button,label {
+    cursor: pointer;
+}
+hr {
+    display: none;
+}
+table{
+    border-collapse: collapse;
+}
+th,td {
+    padding: 0;
+}
+address,i{
+    font-style: normal;
+}
+
+/* clear */
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* skip_menu */
+.skip_menu a {
+    position: absolute;
+    top: -9999px;
+    display: block;
+    line-height: 50px;
+    color: white;
+    background: black;
+    text-align: center;
+}
+.skip_menu a:focus {
+    top: 0;
+}
